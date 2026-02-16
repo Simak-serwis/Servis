@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serwis u simaka</title>
+    <link rel="stylesheet" href="style_servis.css">
+</head>
+<body>
+    <img src="img/photo_2025-04-27_19-17-52.jpg" class="img-logo" alt="Logo Serwis u simaka">
+    <h1 class="title">Serwis u simaka - Panel Administracyjny</h1>
+    <div class="container_start">
+        <p class="text-abmin1">Witaj w panelu administracyjnym Serwis u simaka!</p>
+        <button onclick="addCar()" class="button-add-car">Dodaj pojazd</button>
+    <button onclick="deleteCar()" class="button-dell-car">Usuń pojazd</button>
+    </div>
+    <div class="container_info_car">
+        <h2>Informacje o pojeździe</h2>
+        <table class="car-info-table">
+            <tr>
+                <th><img src="img/BMW_E39_525D.jpg" class="img-result" alt="Пример кода"></th>
+                <th>Marka</th>
+                <th>Model</th>
+                <th>Rok produkcji</th>
+                <th>Numer rejestracyjny</th>
+            </tr>
+            <tr>
+                <td> </td>
+                <td>BMW</td>
+                <td>E39 525D</td>
+                <td>2000</td>
+                <td>XYZ 1234</td>
+            </tr>
+        </table>
+        <p id="car-info">Wybierz pojazd, aby zobaczyć szczegóły.</p>
+    </div>  
+</body>
+</html>

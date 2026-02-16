@@ -35,11 +35,16 @@ body {
     padding: 0 20px;
     text-align: center;
 }
-
+/*<-----------Text---------->*/
 .text1 {
     font-size: 1.35rem;
     margin: 0 0 1.5rem;
     color: #444;
+}
+.text-abmin1 {
+font-size: 1.35rem;
+margin: 0 0 1.5rem;
+color: black;
 }
 
 .search-wrapper {
@@ -64,6 +69,7 @@ body {
     box-shadow: 0 0 0 3px rgba(30,115,190,0.15);
 }
 
+/*<---------Buttons-------->*/
 .button-search {
     position: absolute;
     top: 50%;
@@ -82,27 +88,81 @@ body {
 .button-search:hover {
     background: #165a94;
 }
+.button-add-car {
+    position: relative;
+    left: -25%;
+    transform: translateX(-50%);
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px 10px  rgba(74, 252, 3, 0.534);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.button-add-car:hover {
+    background: #218838;
+}
+
+.button-dell-car {
+    position: relative;
+    left: 40%;
+    transform: translateX(-50%);
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px 10px  rgba(255, 0, 0, 0.534);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.button-dell-car:hover {
+    background: #c82333;
+}
+
+/*<---------Container-------->*/
 
 /* Блок с результатом */
 .result-container {
     max-width: 100%;
     margin: 40px auto;
     padding: 30px;
-    background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     text-align: center;
 }
-.img-result {
+.container_start {
     position: relative;
-    margin-left: -50%;
-    max-width: 10%;
-    height: auto;
+    box-shadow: #222 0 4px 12px;
+    max-width: 650px;
+    height: 100px;
+}
+.container_info_car {
+    position:relative;
+    max-width: 85%;
+    top: 10px;
+    left: 5%;
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 20px;
 }
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table th{
+    left: -10%;
+
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+/*<---------Image-------->*/
+.img-result {
+    position: relative;
+    left: -40%;
+    right: 0;
+    max-width: 20%;
+    height: auto;
+    border-style: dashed;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.15);
+}
+
 .info-card {
-    background: #f8fafc;
     padding: 1.5rem;
     border-radius: 10px;
     margin: 1rem 0;
