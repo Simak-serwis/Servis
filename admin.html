@@ -15,24 +15,36 @@
     <button onclick="deleteCar()" class="button-dell-car">Usuń pojazd</button>
     </div>
     <div class="container_info_car">
-        <h2>Informacje o pojeździe</h2>
-        <table class="car-info-table">
-            <tr>
-                <th><img src="img/BMW_E39_525D.jpg" class="img-result" alt="Пример кода"></th>
-                <th>Marka</th>
-                <th>Model</th>
-                <th>Rok produkcji</th>
-                <th>Numer rejestracyjny</th>
-            </tr>
-            <tr>
-                <td> </td>
-                <td>BMW</td>
-                <td>E39 525D</td>
-                <td>2000</td>
-                <td>XYZ 1234</td>
-            </tr>
-        </table>
-        <p id="car-info">Wybierz pojazd, aby zobaczyć szczegóły.</p>
+        <h2 style="text-align: center; margin-bottom: 50px;">Informacje o pojeździe</h2>
+        <div class="image">
+        <img src="img/BMW_E39_525D.jpg" class="img-result" alt="Пример кода">
+            <div class="car-info">
+                <h3>Marka:</h3> BMW
+                <h3>Model:</h3> E39 525D
+                <h3>Rok produkcji:</h3> 2000
+                <h3>Numer rejestracyjny:</h3> XYZ 1234
+            </div>
+            <div style="margin-right: 70px;">
+                <h3>Data przeglądu:</h3> 2025-03-11
+                <h3>Następny przegląd:</h3> 2026-03-11
+            </div>
+        </div>
     </div>  
+    <div class="Historia">
+        <h2 style="text-align: center;">Historia pojazdu</h2>
+        <button class="accordion-btn" style="text-align: center;">23.11.2025</button>
+            <div class="accordion-panel">
+                <ul>
+                    <li>Wymiana wachacze(przód prawy) 3160503902 ||184 zł</li>
+                    <li>Poduszka amortyzatora LEMFORDER (przód lewy+prawy) ||206 zł</li>
+                    <li>Przewód układu chłodzenia 05-3528 ||69 zł</li>
+                    <li>Płyn hamulcowy DOT 4 1L || 28 zł</li>
+                    <li>Wymiana opon ||200 zł</li>
+                    <li>Termostat || 200 zł</li>
+                    <li>Kostki/wtyczki || 12 zł</li>
+                </ul>
+            </div>
+    </div>
+    <script src="js.js"></script>
 </body>
 </html>

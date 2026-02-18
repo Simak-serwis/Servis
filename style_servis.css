@@ -131,23 +131,34 @@ color: black;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     padding: 20px;
 }
-.table {
-    width: 100%;
-    border-collapse: collapse;
+.car-info {
+    flex:1;
 }
-.table th{
-    left: -10%;
+.Historia {
+    position: relative;
+    max-width: 89%;
+    top: 10px;
+    left: 5%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    margin-top: 20px;
+}
+.Historia h4 {
+    margin-left: 30px;
+}
 
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-}
 /*<---------Image-------->*/
+.image{
+    display: flex;
+    align-items: start;
+    gap: 80px;
+    margin-bottom: 30px;
+}
 .img-result {
     position: relative;
-    left: -40%;
-    right: 0;
     max-width: 20%;
-    height: auto;
+    max-height: 100%;
     border-style: dashed;
     border-radius: 12px;
     box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.15);
@@ -191,6 +202,32 @@ color: black;
 .hidden {
     display: none;
 }
+
+
+.accordion-btn {
+  width: 100%;
+  padding: 16px;
+  text-align: left;
+  background: #86bbf04b;
+  border: none;
+  cursor: pointer;
+  border-radius: 17px;
+  box-shadow: 0 4px 12px rgba(248, 223, 0, 0.411);
+  font-weight: 600;
+}
+
+.accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  background: white;
+  padding: 0 20px;
+    border-radius: 17px;
+  box-shadow: 0 4px 12px rgba(248, 223, 0, 0.411);
+}
+
+
+
 
 /* Мобильная адаптация */
 @media (max-width: 500px) {
